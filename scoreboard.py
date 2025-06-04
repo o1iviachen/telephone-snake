@@ -31,10 +31,9 @@ class Scoreboard(Turtle):
             # Add number to phone number
             self.phone_number += value
 
-            # If the phone number is 10 characters long, it is complete
+            # If the phone number is 10 characters long, move scoreboard to centre
             if len(self.phone_number) == 10:
                 self.goto(0, 0)
-                self.write("thanks for your phone number!", align="center", font=('Arial', 15, 'bold'))
 
         # If not, the user is deleting the latest number
         else:
