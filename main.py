@@ -26,6 +26,11 @@ screen.onkey(snake.up, "Down")
 screen.onkey(snake.right, "Left")
 screen.onkey(snake.left, "Right")
 
+screen.onkey(snake.left, "d")
+screen.onkey(snake. right, "a")
+screen.onkey(snake.up, "s")
+screen.onkey(snake.down, "w")
+
 game_is_on = True
 while game_is_on:
     screen.update()
