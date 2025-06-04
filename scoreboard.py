@@ -21,7 +21,7 @@ class Scoreboard(Turtle):
                 self.phone_number += value
             else:
                 self.goto(0, 0)
-                self.write("incomplete phone number. please try again.", align="center", font=('Arial', 15, 'bold'))
+                self.write("thanks for your phone number!", align="center", font=('Arial', 15, 'bold'))
                 return True
         else:
             if self.phone_number:
