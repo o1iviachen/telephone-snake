@@ -20,10 +20,13 @@ class Scoreboard(Turtle):
             if len(self.phone_number) != 9:
                 self.phone_number += value
             else:
-                pass
+                self.goto(0, 0)
+                self.write("incomplete phone number. please try again.", align="center", font=('Arial', 15, 'bold'))
+                return True
         else:
             if self.phone_number:
                 self.phone_number = self.phone_number[:-1]
+        return False
 
     def phone_number_incomplete(self):
         self.goto(0, 0)

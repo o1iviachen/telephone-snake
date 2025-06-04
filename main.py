@@ -35,7 +35,8 @@ while game_is_on:
     for index, number in enumerate(number_turtles):
         if snake.head.distance(number) < 15:
             snake.extend()
-            scoreboard.update_phone_number(str(numbers[index]))
+            if scoreboard.update_phone_number(str(numbers[index])):
+                game_is_on = False
             scoreboard.update_UI()
             for turtle in number_turtles:
                 turtle.refresh()
