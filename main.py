@@ -1,3 +1,14 @@
+"""
+Telephone Snake
+ICS4U
+Emily Zhang, Olivia Chen and Su Huang
+Modified snake game with inverse movement controls to input telephone numbers
+History:
+June 30, 2025: Program creation
+June 2, 2025: Functionality completion
+June 4: Documentation completion
+"""
+
 from turtle import Screen
 import time
 from snake import Snake
@@ -33,10 +44,10 @@ for number in numbers:
 screen.listen()
 
 # Add key controls for snake movement
-screen.onkey(snake.up, "Up")
-screen.onkey(snake.down, "Down")
-screen.onkey(snake.left, "Left")
-screen.onkey(snake.right, "Right")
+screen.onkey(snake.down, "Up")
+screen.onkey(snake.up, "Down")
+screen.onkey(snake.right, "Left")
+screen.onkey(snake.left, "Right")
 screen.onkey(snake.left, "d")
 screen.onkey(snake.right, "a")
 screen.onkey(snake.up, "s")
