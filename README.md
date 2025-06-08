@@ -6,7 +6,7 @@ Telephone-snake is a snake-based interface for phone number entry.
 ## Features
 - Allows users to input the digits of their phone number by playing Snake with reversed controls
 - Allows users to delete a digit in using the backspace key
-- Allows users to use both WASD keys or the arrow keys 
+- Allows users to use both WASD keys and arrow keys 
 
 ## Installation
 This game can be run on any device
