@@ -74,13 +74,13 @@ while game_is_on:
             # Extend the snake body
             snake.extend()
 
-            # Update phone number with the hit number.
+            # Update phone number with the hit number
             scoreboard.update_phone_number(str(numbers[index]))
 
             # Update phone number UI
             scoreboard.update_UI()
 
-            # If the user has finished their phone number, end game and break out of for loop
+            # If the user has finished their phone number, end game and break out of the for loop
             if len(scoreboard.phone_number) == 10:
                 game_is_on = False
                 break
@@ -89,7 +89,7 @@ while game_is_on:
             for turtle in number_turtles:
                 turtle.refresh()
 
-    # If snake head hits screen edge
+    # If the snake head hits screen edge
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
 
         # End game
@@ -98,7 +98,7 @@ while game_is_on:
         # Show losing UI
         scoreboard.phone_number_incomplete()
 
-    # If snake head hit snake's other segments
+    # If the snake head hit the snake's other segments
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
 

@@ -2,7 +2,7 @@
 Scoreboard Class
 ICS4U
 Emily Zhang, Olivia Chen and Su Huang
-Show phone number and result user interface
+Show phone number and result user interfaces
 History:
 June 30, 2025: Program creation
 June 2, 2025: Functionality completion
